@@ -1,21 +1,9 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-  <!--
-    <title>FinalProject</title>
-    <%= csrf_meta_tags %>
 
-    <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
-    <meta charset="utf-8">
-
-    <!-- Make it responsive to small screens -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    
-
-
+<!--
+<html lang="en">
+<head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +11,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/265e6925e1.js" crossorigin="anonymous"></script>
-  
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -57,9 +44,11 @@
       .row.content {height:auto;} 
     }
   </style>
+
 </head>
 
 
+<body>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -68,7 +57,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="/"><i class="far fa-gem"></i> BET CLARITY</a>
+      <a class="navbar-brand" href="#"><i class="far fa-gem"></i> &nbsp BET CLARITY</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -82,8 +71,61 @@
     </div>
   </div>
 </nav>
-  
-    <%= yield %>
-  </body>
+
+
+-->
+
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">YTD Record:</a></p>
+      <p><a href="#">Lifetime Record:</a></p>
+      <p><a href="#">Results By Sport</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Welcome to Bet Clarity <i class="far fa-gem"></i> </h1>
+        <p>Our mission is simple: 
+        </p><p>To provide a clear picture of your betting history</p>
+      <hr>
+      <h3>How</h3>
+        <p>By importing your bet results directly from bookies we are able to consilidate results
+        across multiple books making it easy for you to see what your good at...</p>
+        <p>and places where you should let others play</p>
+        <p>Bet Clarity’s primary goal is to make you a more informed bettor, consolidating your performance into one place</p>
+              <!--      <img src="https://i.postimg.cc/WbqWyBHK/betclarity.png" class="img-fluid" alt="Responsive image" style="width:750px;height:600px">
+--> 
+
+    </div>
+    <!---->
+
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p><img src="https://preventionlane.org/wp-content/uploads/2015/09/draftkings-ad.png" 
+        alt="Italian Trulli" style="width:150px;height:125px"></p>
+
+      <!-- IF you want separate boxes uncomment the two div statements below
+      </div>
+      <div class="well">
+
+      -->
+        <p><img src="https://www.michigansharp.com/wp-content/uploads/2020/10/fanduel_sportsbooklogo.jpg" 
+        alt="Italian Trulli" style="width:150px;height:100px"></p>
+
+        <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCp00ze15Tm6-uCWyiab40Neg76Vm5l-IMKg&usqp=CAU" 
+        alt="Italian Trulli" style="width:150px;height:100px"></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <p>Contact Us</p>
+</footer>
+
+</body>
 </html>
 
