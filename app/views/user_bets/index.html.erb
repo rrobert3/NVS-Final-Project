@@ -1,0 +1,57 @@
+<h1>List of bets</h1>
+
+<% if @current_user.present? %>
+<form action="/insert_photo" method="post">
+  <label for="browser_input">Image</label>
+  <input id="browser_input" type="text" name="query_image" placeholder="Enter a URL for the image...">
+
+  <label for="browser_caption">Caption</label>
+  <textarea id="browser_caption" name="query_caption" placeholder="Enter a caption for the photo..."></textarea>
+
+  <button>Add photo</button>
+</form>
+
+<hr>
+
+<% end %>
+
+<table border="1">
+  <tr>
+    <th>Image</th>
+    <th>Caption</th>
+    <th>Owner</th>
+    <th>Posted</th>
+    <th>Likes</th>
+    <th></th>
+  </tr>
+
+  <% @photos.each do |photo| %>
+    <tr>
+      <td>
+        <img src="<%= photo.image %>">
+      </td>
+    
+      <td>
+        <%= photo.caption %>
+      </td>
+    
+      <td>
+        <%= photo.poster.username %>
+      </td>
+    
+      <td>
+        <%= time_ago_in_words(photo.created_at) %> ago
+      </td>
+    
+      <td>
+        <%= photo.likes_count %>
+      </td>
+    
+      <td>
+        <a href="/photos/<%= photo.id %>">
+          Show details
+        </a>
+      </td>
+    </tr>
+  <% end %>
+</table>
